@@ -1,0 +1,12 @@
+{
+	"name": "data-desk",
+	"scripts": {
+		"watch": "npx shadow-cljs watch app browser-test karma-test",
+		"release": "npx shadow-cljs release app",
+		"build-report": "npx shadow-cljs run shadow.cljs.build-report app target/build-report.html"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"shadow-cljs": "2.12.5"
+	}
+}
