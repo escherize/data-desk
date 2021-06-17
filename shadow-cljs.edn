@@ -1,14 +1,13 @@
 {:nrepl {:port 8777}
 
- 
-
  :source-paths ["src" "test"]
 
  :dependencies
  [[reagent "1.0.0"]
   [re-frame "1.2.0"]
   [re-com "2.13.2"]
-
+  [kee-frame "1.1.2"]
+  [metosin/malli "0.5.1"]
   [binaryage/devtools "1.0.3"]]
 
  :dev-http
@@ -27,5 +26,5 @@
    :dev
    {:compiler-options
     {:closure-defines
-     { 
-      re-com.config/root-url-for-compiler-output "http://localhost:8290/js/compiled/app/cljs-runtime/"}}}}}}
+     {re-com.config/root-url-for-compiler-output
+      "http://localhost:8290/js/compiled/app/cljs-runtime/"}}}}}}
